@@ -8,7 +8,6 @@ import java.util.regex.Pattern;
 class Proxy {
 
 
-    // NOC these 3 fields
     private String requestedHost;
     private String requestedMethod;
     private String requestedPath;
@@ -19,7 +18,7 @@ class Proxy {
 
 
     public static void main(String [] a) throws Exception
-    { // NOC - do not change main()
+    { 
 
         Proxy proxy = new Proxy(Integer.parseInt(a[0]));
         proxy.run();
