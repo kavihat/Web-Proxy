@@ -27,7 +27,7 @@ class Proxy {
 
     Proxy(int port)
     {
-        serverPort=port; // other init stuff ADC here
+        serverPort=port;
     }
 
     int parseInput(String buffer) throws Exception
