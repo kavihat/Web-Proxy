@@ -16,7 +16,7 @@ class Proxy {
     private final int serverPort;
     private InetAddress hostIP ;
     private final String INTERNAL_SERVER_ERROR="HTTP/1.1 500 Internal Server Error\r\n\r\n";
-  //  private             FILE ;    /* name of the file in URL, if you like */
+
 
     public static void main(String [] a) throws Exception
     { // NOC - do not change main()
@@ -51,8 +51,7 @@ class Proxy {
         return 0;
     }
 
-    // Note: dns() must set PREFERRED
-    int dns(String host) // NOC - do not change this signature; X is whatever you want
+    int dns(String host) 
     {
         try {
             InetAddress hostAddress = InetAddress.getByName(host);
